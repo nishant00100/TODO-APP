@@ -7,6 +7,12 @@ const todoSchema = new mongoose.Schema({
     },
     description : {
         type: String,
-        required : true
-    }
-})
+        required : true,
+    },},
+
+    { timestamps : true, },
+
+)
+
+const TODO = mongoose.model("Todo", todoSchema);
+module.exports = TODO;
