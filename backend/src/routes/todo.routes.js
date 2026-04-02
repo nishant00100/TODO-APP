@@ -1,5 +1,5 @@
 const express = require("express");
-const { handleCreatingTodo } = require("../controllers/todo.controller");
+const { handleCreatingTodo, getTodo, updateTodo, deleteTodo } = require("../controllers/todo.controller");
 
 const router = express.Router();
 
